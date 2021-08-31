@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+$dark-color: #333333;
+
+$white-color: rgb(235, 228, 214);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+.menu{
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 12;
+	height: 100%;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	//justify-content: space-around;
+	background-color: rgba(235, 228, 214, 0.8);
+	transform: translateX(-320px); //0px для выезда
+	transition: transform 0.5s ease-in-out;
+}
+.line{
+	border-left: 1px solid white;
+    height: 70%;
+    position: absolute;
+    left: 0%;
+    top: 20%;
+}
+.second-lavel-menu{
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 11;
+	height: 100%;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(235, 228, 214, 0.8);
+	transform: translateX(-320px);
+	transition: transform 0.5s ease-in-out;
+	span{
+		cursor: pointer;
+		color: $dark-color;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 20px 0;
+	}
+}
+.menu-items{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	span{
+		padding: 15px 15%;
+		cursor: pointer;
+		color: $dark-color;
+		font-size: 18px;
+        font-weight: 500;
+	}
+}
+.title{
+    display: flex;
+    flex-direction: column;
+	align-self: center;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	p{
+		color: $dark-color;
+		align-self: flex-end;
+		font-size: 16px;
+	}
+}
+.name{
+	display: flex;
+	p{
+		color: $dark-color;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    span{
+		color: $dark-color;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+	.title{
+		margin-top: 20px;
+	}
+
+    
+}

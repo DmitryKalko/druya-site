@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+$ligth-color: #EBE4D6;
+$dark-color: #333333;
+$accent-color: #2F80ED;
+$height: 100%;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    //overflow-y: hidden;  // если это включить карта становится серой областью
+}
+.all-wrapper{
+  position: absolute;
+  z-index: 2;
+  top: 0; left: 0; bottom: 0; right: 0;
+  overflow: hidden;
+  background: linear-gradient(19.5deg, #2E2D33 2.51%, #2E2D33 2.52%, #2E2D33 11.67%, rgba(46, 45, 51, 0) 61.55%);
+}
+.wrapper{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.back{ 
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    background-size: cover;
+    overflow-y: hidden;
+    background-position: center;
+    transition: all 0.8s ease;
+    z-index: 1;
+}
+.main-screen{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(19.5deg, #2E2D33 2.51%, #2E2D33 2.52%, #2E2D33 11.67%, rgba(46, 45, 51, 0) 61.55%);
+}
+.herb{
+    cursor: pointer;
+}
+.burger-menu{
+    cursor: pointer;
+}
+.top-scroll{
+    position: absolute;
+    top: 50px; left: 0; right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+.down-scroll{
+    position: absolute;
+    bottom: 50px; left: 0; right: 0;
+    margin: auto;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.navigation-wrapper{
+    width: 100%;
+    position: absolute;
+    top: $height * 0.3; left: 0;
+}
+.navigation-block{
+    display: flex;
+    align-items: center;
+    img{
+        cursor: pointer;
+    }
+    :first-child{
+        transform: rotate(-90deg);
+    }
+    :last-child{
+        transform: rotate(90deg);
+    }
+}
+.top-lavel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 0 30px;
+}
+.menu-page-title{
+    display: flex;
+    img{
+        margin-right: 15px;
+    }
+}
+.logos-block{
+    display: flex;
+    align-items: center;
+}
+.title-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p{
+        font-size: 16px;
+        font-weight: 300;
+        color: $ligth-color;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); 
+    }
+}
+.main-title{
+    display: flex;
+    p{
+        font-size: 24px;
+        font-weight: 300;
+        color: $ligth-color;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); 
+    }
+    span{
+        font-size: 24px;
+        //font-weight: 900;
+        font-weight: bold;
+        margin-left: 5px;
+        color:$accent-color;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); 
+    }
+}
+.content-wrapper{
+    width: 100%;
+    position: absolute;
+    top: $height * 0.68; left: 0;   //менять в адаптиве
+}
+.content-block{
+    padding: 0 0 50px 30px;
+    width: 50%;
+    p{
+        color: $ligth-color;
+    }
+}
+.name1-name2{
+    display: flex;
+}
+.name1{
+    margin-right: 5px;
+    // padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.name2{
+    font-size: 24px;
+    //font-weight: 900;
+    font-weight: bold;
+}
+// .name3{
+//     font-weight: bold;
+//     font-size: 14px;
+//     height: 14px;
+// }
+.slogan{
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    opacity: 0.75;
+    padding: 0 0 20px 0;
+}
+
+.text{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .book-geo{
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 0 50px 30px;
+      .book{
+        width: 50px;
+        cursor: pointer;
+      }
+      .geo{
+        width: 60px;
+        cursor: pointer;
+      }
+    }
+   .copyright{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: $ligth-color;
+      padding: 0 30px 50px 0;
+      img{
+          margin-bottom: 10px;
+      }
+      .footer-text-wrap{
+          display: flex;
+          padding-bottom: 10px;
+          h4{
+            margin-left: 5px;
+          }
+      }
+    }
+}
+
+
+
+
+@media (max-width: 3200px) {
+    .content-wrapper{
+        top: $height * 0.8; left: 0;
+    }
+}
+@media (max-width: 2560px) {
+    .content-wrapper{
+        top: $height * 0.7; left: 0;
+    }
+}
+@media (max-width: 2100px) {
+    .content-wrapper{
+        top: $height * 0.63; left: 0;
+    }
+}
+@media (max-width: 1700px) {
+    .content-wrapper{
+        top: $height * 0.49; left: 0;
+    }
+}
+@media (max-width: 1500px) {
+    .content-wrapper{
+        top: $height * 0.5; left: 0;
+    }
+    .name1{
+        margin-right: 5px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .name2{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .slogan{
+        font-size: 50px;
+        padding: 5px 0 10px 0;
+    }
+    .text{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .more{
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 1300px) {
+    .content-wrapper{
+        top: $height * 0.52; left: 0;
+    }
+    .name1{
+        margin-right: 5px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .name2{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .slogan{
+        font-size: 25px;
+        padding: 10px 0 5px 0;
+    }
+    .text{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    .more{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1100px) {
+    .title-texts{
+        p{
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    .main-title{
+        p{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        span{
+            font-size: 20px;
+            font-weight: 700;
+            margin-left: 5px;
+        }
+    }
+}
+@media (max-width: 920px) {
+    .title-texts{
+        p{
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    .main-title{
+        p{
+            font-size: 16px;
+            font-weight: 300;
+        }
+        span{
+            font-size: 16px;
+            font-weight: 700;
+            margin-left: 5px;
+        }
+    }
+    .top-scroll, .navigation-block img, .down-scroll{
+        width: 80px;
+    }
+    .burger-menu{
+        width: 40px;
+    }
+    .herb{
+        width: 80px;
+    }
+}
+@media (max-width: 800px) {
+    .content-wrapper{
+        top: $height * 0.45; left: 0;
+    }
+}
+@media (max-width: 765px) {
+    .top-scroll, .left-scroll, .right-scroll, .down-scroll{
+        display: none;
+    }
+    .back{
+        height: 100%;
+    }
+    .navigation-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text, .more{
+        display: none;
+    }
+    .content-block{
+        width: 100%;
+        padding: 0 0 10px 20px;
+    }
+    .name1-name2{
+        flex-direction: column;
+    }
+    .slogan{
+        font-size: 25px;
+    }
+    .copyright img, .copyright h4, .copyright p{
+        display: none;
+    }  
+}
+@media (max-width: 500px) {
+    .top-lavel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 20px 0 20px;
+        padding: 0;
+    }
+    .herb{
+        align-self: flex-end;
+        margin-top: 5px;
+        width: 60px;
+    }
+    .social{
+        display: flex;
+        padding: 0 0 20px 20px;
+    }
+}
+@media (max-width: 420px) {
+    .herb{
+        align-self: flex-end;
+        width: 50px;
+    }
+    .content-block{
+        padding: 0 0 50px 20px;
+    }
+}
+
