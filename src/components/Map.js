@@ -3,14 +3,16 @@
 // 	//InfoWindow
 // } from "react-google-maps";
 import React from 'react';
-import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import './styles/Map.css';
 import customStyle from "../components/styles/mapStyles";
 import { textsDb } from '../db/textsDB';
 
+
 export class Maps extends React.Component {
 	state = {
-		selectedObject: null,
+		//selectedObject: null,
+		//id: this.props.currentId
 	}
 
 	closeMap = () => {
@@ -31,7 +33,7 @@ export class Maps extends React.Component {
 	// }
 
 	render() {
-		const {selectedObject} = this.state;
+		//const {selectedObject} = this.state;
 		// const mapStyles = {
 		// 	width: "100%",
 		// 	height: "100%",
@@ -49,9 +51,9 @@ export class Maps extends React.Component {
 					<Map
 						google={this.props.google}
 						zoom={15}
-						disableDefaultUI = {true}
+						disableDefaultUI={true}
 						styles={customStyle}
-						initialCenter={{ lat: 55.79125121022339, lng: 27.449522803627833 }}
+						initialCenter={{ lat: 55.79072039312701, lng: 27.444802112550597 }}
 					>
 						{textsDb.map(object => (
 							<Marker
@@ -62,24 +64,20 @@ export class Maps extends React.Component {
 									lat: object.coordinates.lat,
 									lng: object.coordinates.lng
 								}}
+								title={object.slogan}
+								icon={this.props.currentId === object.id ?
+									{
+										url: process.env.PUBLIC_URL + '/images/geo.svg',
+										scaledSize: new this.props.google.maps.Size(100, 100)
+									}
+									:
+									{
+										url: process.env.PUBLIC_URL + '/images/geo.svg',
+										scaledSize: new this.props.google.maps.Size(62, 62)
+									}
+								}
 							/>
 						))}
-
-						{/* {selectedObject && (
-							<InfoWindow
-								onClick={this.closeInfoWindow}
-								position={{
-									lat: selectedObject.coordinates.lat,
-									lng: selectedObject.coordinates.lng
-								}}
-							>
-								<div>
-									<h2>{selectedObject.slogan}</h2>
-									<p>{selectedObject.name2}</p>
-									<p onClick={() => this.props.changeScreen(selectedObject.id)}>посмотреть</p>
-								</div>
-							</InfoWindow>
-						)} */}
 					</Map>
 				</div>
 			</div>

@@ -285,6 +285,7 @@ class App extends Component {
     render() {
 
         const {
+            currentSlideId,
             linkImg,
             linkVideo,
             name1,
@@ -472,6 +473,7 @@ class App extends Component {
                     showMap={showMap}
                     closeMap={this.closeMap}
                     changeScreen={this.changeScreen}
+                    currentId={currentSlideId}
                 />
             </>
         );
