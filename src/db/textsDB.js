@@ -15,8 +15,8 @@ export const textsDb = [
         linkImg: '101.jpg',
         linkVideo: 'https://www.youtube.com/embed/AiYFPFLCuZE?rel=0&start=0&end=152',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: 55.79072039312701,
+            lng: 27.444802112550597,
         },
     },
     {
@@ -135,8 +135,8 @@ export const textsDb = [
         linkImg: '107.jpg',
         linkVideo: 'https://www.youtube.com/embed/vOeYmsW8t50?rel=0&start=737&end=798',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: 55.7901988,
+            lng: 27.439232,
         },
     },
     {
@@ -175,8 +175,8 @@ export const textsDb = [
         linkImg: '201.jpg',
         linkVideo: 'https://www.youtube.com/embed/AiYFPFLCuZE?rel=0&start=0&end=152',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: 55.79072039312701,
+            lng: 27.444802112550597,
         },
     },
     {
@@ -195,8 +195,8 @@ export const textsDb = [
         linkImg: '202.jpg',
         linkVideo: 'https://www.youtube.com/embed/vOeYmsW8t50?rel=0&start=433&end=736',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: 55.788247340348875,
+            lng: 27.46318568307679,
         },
     },
     {
@@ -215,8 +215,8 @@ export const textsDb = [
         linkImg: '203.jpg',
         linkVideo: 'https://www.youtube.com/embed/vOeYmsW8t50?rel=0&start=253&end=432',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: 55.79182817304647,
+            lng: 27.454160967734023,
         },
     },
     {
@@ -235,8 +235,8 @@ export const textsDb = [
         linkImg: '204.jpg',
         linkVideo: 'https://www.youtube.com/embed/AiYFPFLCuZE?rel=0&start=35&end=152',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: 55.79173379586035,
+            lng: 27.448967556091237,
         },
     },
     {
@@ -255,8 +255,8 @@ export const textsDb = [
         linkImg: '205.jpg',
         linkVideo: 'https://www.youtube.com/embed/AiYFPFLCuZE?rel=0&start=95&end=152',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: 55.78446957178158,
+            lng: 27.42887652737348,
         },
     },
     {
