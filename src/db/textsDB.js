@@ -115,8 +115,8 @@ export const textsDb = [
         linkImg: '106.jpg',
         linkVideo: 'https://www.youtube.com/embed/AiYFPFLCuZE?rel=0&start=99&end=152',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: null,
+            lng: null,
         },
     },
     {
@@ -155,8 +155,8 @@ export const textsDb = [
         linkImg: '108.jpg',
         linkVideo: 'https://www.youtube.com/embed/AiYFPFLCuZE?rel=0&start=0&end=152',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: null,
+            lng: null,
         },
     },
     {
@@ -175,8 +175,8 @@ export const textsDb = [
         linkImg: '201.jpg',
         linkVideo: 'https://www.youtube.com/embed/AiYFPFLCuZE?rel=0&start=0&end=152',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: null,
+            lng: null,
         },
     },
     {
@@ -195,8 +195,8 @@ export const textsDb = [
         linkImg: '202.jpg',
         linkVideo: 'https://www.youtube.com/embed/vOeYmsW8t50?rel=0&start=433&end=736',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: null,
+            lng: null,
         },
     },
     {
@@ -215,8 +215,8 @@ export const textsDb = [
         linkImg: '203.jpg',
         linkVideo: 'https://www.youtube.com/embed/vOeYmsW8t50?rel=0&start=253&end=432',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: null,
+            lng: null,
         },
     },
     {
@@ -235,8 +235,8 @@ export const textsDb = [
         linkImg: '204.jpg',
         linkVideo: 'https://www.youtube.com/embed/AiYFPFLCuZE?rel=0&start=35&end=152',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: null,
+            lng: null,
         },
     },
     {
@@ -275,8 +275,8 @@ export const textsDb = [
         linkImg: '206.jpg',
         linkVideo: 'https://www.youtube.com/embed/AiYFPFLCuZE?rel=0&start=99&end=152',
         coordinates: {
-            lat: 12,
-            lng: 12,
+            lat: null,
+            lng: null,
         },
     },
 ];
