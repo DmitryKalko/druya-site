@@ -87,7 +87,7 @@ export const navigationDb = [
         id: 107,
         idMaster: null,
         idUp: null,
-        idDown: null,
+        idDown: 207,
         idLeft: 106,
         idRight: 108,
         idReserve1: null,
